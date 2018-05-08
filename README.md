@@ -14,3 +14,5 @@ Set environment variable **ADT_PULSE_USERNAME** and **ADT_PULSE_PASSWORD**
 >>> ps.arm("stay")
 >>> ps.disarm()
 ```
+
+NOTE: the cookie is saved under */tmp/adtpulse_cookies.pickle*. 

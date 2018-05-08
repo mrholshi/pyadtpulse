@@ -110,14 +110,14 @@ class Adtpulse(object):
     @staticmethod
     def _save_cookies(requests_cookiejar, filename):
         """Save cookies to a file."""
-        with open(filename, 'w') as handle:
+        with open(filename, 'wb') as handle:
             pickle.dump(requests_cookiejar.get_dict(),
                         handle)
 
     @staticmethod
     def _load_cookies(filename):
         """Load cookies from a file."""
-        with open(filename) as handle:
+        with open(filename, 'rb') as handle:
             return requests.utils.cookiejar_from_dict(pickle.load(handle))
 
     def __init__(self):
