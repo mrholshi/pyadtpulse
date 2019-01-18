@@ -134,7 +134,7 @@ class Adtpulse(object):
 
         self.ARM_DISARM_HANDLER = (
             self.ADTPULSE_DOMAIN + self.ADTPULSE_CONTEXT_PATH +
-            '/quickcontrol/armDisarmRRA.jsp'
+            '/quickcontrol/armDisarm.jsp'
         )
         self._session = None
 
